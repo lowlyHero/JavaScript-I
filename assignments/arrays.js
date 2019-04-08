@@ -327,10 +327,9 @@ console.log(inventory[inventory.length - 1]);
 
 let carModels = [];
 
-for (let i = 0; inventory.length; i++){
-    console.log(inventory.car_make);
-}
-
+let getModels = inventory.forEach(currentValue => {
+    console.log(currentValue.car_model);
+});
 console.log(carModels.sort());
 
 // ==== Challenge 4 ====
